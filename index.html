@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Basit | Portfolio</title>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Typed.js (deferred for performance) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Social Sidebar -->
+  <div class="social-bar">
+    <a href="https://github.com/22f8763" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/muhammad-basit-29913028a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:basit@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- Navbar: site navigation & theme toggle -->
+  <nav>
+    <div class="logo">Basit.Dev</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <!-- Theme toggle button -->
+        <button id="themeToggle"><i class="fas fa-moon"></i></button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section: intro + Typed.js effect -->
+  <section id="home" class="hero fade-in">
+    <img src="profile.jpg" alt="Basit’s Photo" class="profile-img" loading="lazy" />
+    <h1>Hi, I’m <span>Muhammad Basit</span></h1>
+    <p><span id="typed-text"></span></p>
+    <a href="#projects" class="btn">Explore Projects</a>
+  </section>
+
+  <!-- Skills Section: progress bars animate on load -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- Each skill-card carries its percentage in data-progress -->
+      <div class="skill-card" data-progress="80"><h3>C++</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="90"><h3>Python</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="80"><h3>Node.js</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="80"><h3>Django</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="85"><h3>React</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="80"><h3>Frontend Development</h3><div class="progress-bar"><div></div></div></div>
+      <div class="skill-card" data-progress="80"><h3>JavaScript</h3><div class="progress-bar"><div></div></div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section: filterable dynamic list -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="cpp">C++</button>
+      <button data-filter="web">Web</button>
+      <button data-filter="csharp">C#</button>
+    </div>
+    <ul id="projectList"></ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p><i class="fas fa-at"></i> basitarshad97@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +92 306 9315673</p>
+  </section>
+
+  <!-- Back to Top Button: appears after scrolling down -->
+  <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Main Script -->
+  <script defer src="script.js"></script>
+</body>
+</html>
